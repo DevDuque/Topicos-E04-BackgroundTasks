@@ -1,10 +1,5 @@
 package br.ufmg.coltec.topicos_e04_backgroundtasks;
 
-/**
- * Classe retirada do livro Google Android, 3a edição
- * @author R. Lecheta
- */
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
@@ -14,6 +9,7 @@ import java.net.URL;
 
 public class ImageDownloader {
 
+    // Método responsável por baixar a imagem
     public static Bitmap download(String url) throws IOException {
         Bitmap bitmap = null;
 
@@ -21,6 +17,6 @@ public class ImageDownloader {
         bitmap = BitmapFactory.decodeStream(inputStream);
         inputStream.close();
 
-        return  bitmap;
+        return bitmap;
     }
 }
